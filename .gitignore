@@ -1,0 +1,4 @@
+# To make image without the following :
+* .sql
+venv
+Dockerfile
