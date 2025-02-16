@@ -10,7 +10,7 @@ app = Flask(__name__)
 db_connection = pymysql.connect(
     host=os.environ.get('DB_HOST', 'localhost'),
     user=os.environ.get('DB_USER', 'root'),
-    password=os.environ.get('DB_PASSWORD', 'password'),
+    password=os.environ.get('DB_PASSWORD', 'Omar@159!'), # Omar@159!
     database=os.environ.get('DB_DATABASE', 'todo_db'),
     cursorclass=pymysql.cursors.DictCursor
 )
@@ -44,7 +44,7 @@ def delete_task(task_id):
         db_connection.rollback()
     return redirect(url_for('index'))
 
-@app.rout('/complete/<int:task_id>', methods=['POST'])
+@app.route('/complete/<int:task_id>', methods=['POST'])
 def complete_task(task_id):
     try:
         with db_connection.cursor() as cursor:
