@@ -1,2 +1,2 @@
-# End-to-End DevOps : TO-Do List Application
+# End-to-End DevOps Project : TO-Do List Application
 
