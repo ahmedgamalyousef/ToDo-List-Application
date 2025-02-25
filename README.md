@@ -25,14 +25,14 @@ Before you begin, ensure you have met the following requirements :
        - DB_PASSWORD : Your MySQL password
        - DB_DATABASE : Your Databse name 
 4. Create a table in the database that will be used by your application :
-       ```
-       CREATE TABLE tasks (
-       id SERIAL PRIMARY KEY,
-       title VARCHAR(255) NOT NULL,
-       description TEXT,
-       is_complete BOOLEAN DEFAULT false
-       );
-       ```
+   ```
+   CREATE TABLE tasks (
+   id SERIAL PRIMARY KEY,
+   title VARCHAR(255) NOT NULL,
+   description TEXT,
+   is_complete BOOLEAN DEFAULT false
+    );
+   ```
 
 ### Step 2 : Running the Application
 1. Clone the Repository 
