@@ -48,7 +48,7 @@ Before you begin, ensure you have met the following requirements :
 ## Running Project with Docker
     1. Build the Docker Image :
        # docker build -t todo-application .
-    2. Run the docker container 
+    2. Run the docker container : 
        # docker run todo-application
     3. Access the application using following url :
        http://localhost:5000
