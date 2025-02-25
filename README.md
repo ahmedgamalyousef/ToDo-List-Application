@@ -66,7 +66,7 @@ Before you begin, ensure you have met the following requirements :
    ```
    docker run --network=host todo-application
    ```
-3. Access the application using following url 
+3. Access the application using the following url 
    ```
    http://localhost:5000
    ```
