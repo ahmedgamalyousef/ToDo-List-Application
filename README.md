@@ -35,38 +35,38 @@ Before you begin, ensure you have met the following requirements :
        ```
 
 ### Step 2 : Running the Application
-1. Clone the Repository :
+1. Clone the Repository 
    ```    
    git clone https://github.com/ahmedgamalyousef/ToDo-List-Application.git
    ```
-2. Create a Virtual Environment and activate it :
+2. Create a Virtual Environment and activate it 
    ```
    python3 -m venv env
    source env/bin/activate   
     ```
-3. Install Dependencies :
+3. Install Dependencies 
    ```
    pip install -r requirements.txt
    ``` 
     
-4. Start the Application :
+4. Start the Application 
    ```
    python3 app.py
    ``` 
-5. Access the Application using the following url : 
+5. Access the Application using the following url  
    ```
    http://localhost:5000
    ```
 ### Step 3 : Dockerizing the Application
-1. Build the Docker Image :
+1. Build the Docker Image 
  ```
    docker build -t todo-application .
  ```
-2. Run the docker container with host network (to access the local MySQL server) : 
+2. Run the docker container with host network (to access the local MySQL server)  
    ```
    docker run --network=host todo-application
    ```
-3. Access the application using following url :
+3. Access the application using following url 
    ```
    http://localhost:5000
    ```
