@@ -24,7 +24,7 @@ Before you begin, ensure you have met the following requirements :
        - DB_USER : Your MySQL username 
        - DB_PASSWORD : Your MySQL password
        - DB_DATABASE : Your Databse name 
-    4. Create a table in the database that will be used by your application
+    4. Create a table in the database that will be used by your application :
        CREATE TABLE tasks (
        id SERIAL PRIMARY KEY,
        title VARCHAR(255) NOT NULL,
@@ -42,4 +42,5 @@ Before you begin, ensure you have met the following requirements :
        # pip install -r requirements.txt
     4. Start the Application :
        # python3 app.py
-    5. Access the Application using the following url : http://localhost:5000
+    5. Access the Application using the following url : 
+       http://localhost:5000
