@@ -45,7 +45,7 @@ Before you begin, ensure you have met the following requirements :
     5. Access the Application using the following url : 
        http://localhost:5000
 
-## Running Project with Docker
+### Step 3 : Dockerizing the Application
     1. Build the Docker Image :
        # docker build -t todo-application .
     2. Run the docker container with host network (to access the local MySQL server) : 
