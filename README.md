@@ -17,38 +17,56 @@ Before you begin, ensure you have met the following requirements :
 
 ## Running Project
 ### Step 1 : Setting Up the Database
-    1. Start MySQL server on your machine
-    2. Create a new MySQL database for the Application
-    3. Update the database configuration to match your local MySQL settings : 
+1. Start MySQL server on your machine
+2. Create a new MySQL database for the Application
+3. Update the database configuration to match your local MySQL settings : 
        - DB_HOST : localhost
        - DB_USER : Your MySQL username 
        - DB_PASSWORD : Your MySQL password
        - DB_DATABASE : Your Databse name 
-    4. Create a table in the database that will be used by your application :
+4. Create a table in the database that will be used by your application :
+       ```
        CREATE TABLE tasks (
        id SERIAL PRIMARY KEY,
        title VARCHAR(255) NOT NULL,
        description TEXT,
        is_complete BOOLEAN DEFAULT false
        );
+       ```
 
 ### Step 2 : Running the Application
-    1. Clone the Repository :
-       # git clone https://github.com/ahmedgamalyousef/ToDo-List-Application.git
-    2. Create a Virtual Environment and activate it :
-       # python3 -m venv env
-       # source env/bin/activate   
-    3. Install Dependencies :
-       # pip install -r requirements.txt
-    4. Start the Application :
-       # python3 app.py
-    5. Access the Application using the following url : 
-       http://localhost:5000
-
+1. Clone the Repository :
+   ```    
+   git clone https://github.com/ahmedgamalyousef/ToDo-List-Application.git
+   ```
+2. Create a Virtual Environment and activate it :
+   ```
+   python3 -m venv env
+   source env/bin/activate   
+    ```
+3. Install Dependencies :
+   ```
+   pip install -r requirements.txt
+   ``` 
+    
+4. Start the Application :
+   ```
+   python3 app.py
+   ``` 
+5. Access the Application using the following url : 
+   ```
+   http://localhost:5000
+   ```
 ### Step 3 : Dockerizing the Application
-    1. Build the Docker Image :
-       # docker build -t todo-application .
-    2. Run the docker container with host network (to access the local MySQL server) : 
-       # docker run --network=host todo-application
-    3. Access the application using following url :
-       http://localhost:5000
+1. Build the Docker Image :
+ ```
+   docker build -t todo-application .
+ ```
+2. Run the docker container with host network (to access the local MySQL server) : 
+   ```
+   docker run --network=host todo-application
+   ```
+3. Access the application using following url :
+   ```
+   http://localhost:5000
+   ```
