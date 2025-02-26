@@ -20,10 +20,12 @@ Before you begin, ensure you have met the following requirements :
 1. Start MySQL server on your machine
 2. Create a new MySQL database for the Application
 3. Update the database configuration to match your local MySQL settings : 
+      ```
        - DB_HOST : localhost
        - DB_USER : Your MySQL username 
        - DB_PASSWORD : Your MySQL password
        - DB_DATABASE : Your Databse name 
+      ```
 4. Create a table in the database that will be used by your application :
    ```
    CREATE TABLE tasks (
